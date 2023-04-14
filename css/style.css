@@ -1,16 +1,16 @@
 .logo_text
 {
-    color: black;
+    color: white;
     font-size: 50px;
     font-family: 'Times New Roman';
 }
 
-.undtext { font-size: 35px; }
+.undtext { font-size: 35px; color:white;}
 
 .header
 {
     background-color: darkslateblue;
-    height: 125px;
+    height: 195px;
     font-size: 0.8em;
     margin-left: 0px;
     margin-right: 9px;
@@ -71,8 +71,12 @@ ul.menu li a
     display: block;
     height: 20px;
     padding: 6px 35px 5px 28px;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
 ul.menu li.selected a{ color: #aeb002; }
+
+ul.menu li a:hover{color: #e4ec04;}
+
+*{margin: 0; padding: 0;}
