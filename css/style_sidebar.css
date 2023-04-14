@@ -50,6 +50,15 @@ a, a:hover
     color: #aeb002;
 }
 
+ul { margin: 2px 0 22px 17px; }
+
+ul li
+{
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
 .btn
 {
     padding: 8px;
@@ -65,3 +74,12 @@ a, a:hover
     margin-top: 3%;
     margin-left: 2%;
 }
+
+.sidebar ul{ margin: 0; }
+.sidebar ul li
+{
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+
+.sidebar .rating_sidebar{float: right;}
