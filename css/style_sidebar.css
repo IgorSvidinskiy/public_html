@@ -33,9 +33,21 @@ input, textarea
     border: solid 1px #f2f2f2;
 }
 
+h1, h2
+{
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 15px 0;
+    color: #000;
+}
+
+h2{ font-size: 140%; }
+
 .btn
 {
     padding: 8px;
     background-color: white;
     cursor: pointer;
 }
+
+.sidebar h2{ color: #136cb2; }
