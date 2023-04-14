@@ -28,7 +28,7 @@ input[type="text"], input[type="password"], input[type="search"]
 
 input, textarea
 {
-    outline: navy;
+    outline: none;
     border: none;
     border: solid 1px #f2f2f2;
 }
@@ -43,6 +43,13 @@ h1, h2
 
 h2{ font-size: 140%; }
 
+a, a:hover
+{
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
 .btn
 {
     padding: 8px;
@@ -51,3 +58,10 @@ h2{ font-size: 140%; }
 }
 
 .sidebar h2{ color: #136cb2; }
+
+.lables_passreg_text
+{
+    font-size: 0.7em;
+    margin-top: 3%;
+    margin-left: 2%;
+}

@@ -80,3 +80,16 @@ ul.menu li.selected a{ color: #aeb002; }
 ul.menu li a:hover{color: #e4ec04;}
 
 *{margin: 0; padding: 0;}
+
+body
+{
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
+}
+
+p
+{
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
