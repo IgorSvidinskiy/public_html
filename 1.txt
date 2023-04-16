@@ -1,0 +1,44 @@
+                    <h1>New films</h1>
+                    <div class="films_block">
+                        <a href="#"><img src="imgs/black hawk down.jpg"></a>
+                        <a href="#"><img src="imgs/the matrix.jpg"></a>
+                        <a href="#"><img src="imgs/Снимок.JPG"></a>
+                        <a href="#"><img src="imgs/A main hero.jpg"></a>
+                    </div>
+                    <h1>New Serials</h1>
+                    <div class="films_block">
+                        <a href="#"><img src="imgs/818TrulDKmL._AC_SL1500_.jpg"></a>
+                        <a href="#"><img src="imgs/Без названия.jpg"></a>
+                        <a href="#"><img src=""></a>
+                        <a href="#"><img src=""></a>
+                    </div>
+                    <div class="posts">
+                        <hr>
+                        <h2><a href="#">How was filming "Black Hawk down"</a></h2>
+                        <p>
+                            The film takes place on October 3 and 4, 1993 in Somalia, 
+                            where a civil war is going on and people are dying en masse.
+                            Accusations of genocide against their own people fall on Somali warlords who prevent the delivery of humanitarian
+                            aid to the United States by a peaceful environment.
+                            The UN peacekeeping contingent is unable to be on the territory.
+                            Therefore, the command of the American contingent in Somalia, 
+                            according to the plan of a lightning operation,
+                            during which about 200 US troops as part of the Ranger Task Force (Task Force Ranger),
+                            (75th Ranger Regiment - a company of the 3rd Battalion, 160th Battalion Air Regiment, "Delta"),
+                            based on the outskirts of Mogadishu, should go to the area of ​​the city, protected by the forces of Mohammed Farah Aidid.
+                            The purpose of the event is to capture the exporters of Aidid, who have gathered for a meeting in the city,
+                            and deliver them to the base.
+                            A successfully launched operation turns into a battle lasting almost a day and two downed helicopters.
+                            An almost constant reflection claims the lives of 19 foreign and more involved Somalis.
+                        </p>
+                    </div>
+                    <a href="#">Read</a>
+                    <p>
+                        Sir Ridley Scott is a British film director and film producer.
+                        Creator of many acclaimed films such as Alien (1979), Blade Runner (1982), G.I. Jane (1997),
+                        Gladiator (2000), Hannibal (2001), Kingdom of Heaven ( 2005), Gangster (2007), Robin Hood (2010),
+                        Prometheus (2012), Exodus: Gods and Kings (2014), The Martian (2015), House of Gucci (2021).
+                        Older brother of director and producer Tony Scott.
+                        Winner of the Cannes Film Festival Award for Best Debut,
+                        winner and five-time nominee for the BAFTA award, four-time nominee for awards.
+                    </p>
