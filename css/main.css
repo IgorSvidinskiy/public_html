@@ -242,3 +242,13 @@ td img
 .center { text-align: center; }
 
 .rating { font-weight: bold; }
+
+@media only screen
+and (min-device-width:320px)
+and (min-device-height: 568px)
+{
+    .header
+    {
+        background-color: #257965;
+    }
+}
