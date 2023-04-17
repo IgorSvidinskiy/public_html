@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <meta name="vieport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Cinema monster - it's portal about movies">
         <meta name="keywords" content="Films, online, hd"/>
         <link rel="stylesheet" href="css/main.css">
@@ -18,11 +17,10 @@
                     </div>
                     <div class="menubar">
                         <ul class="menu">
-                            <li><a href="#">Main</a></li>
-                            <li class="selected"><a href="#">Films</a></li>
-                            <li><a href="#">Serials</a></li>
-                            <li><a href="#">Film's rating</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li class="selected"><a href="#">Main</a></li>
+                            <li class="selected"><a href="#">Serials</a></li>
+                            <li class="selected"><a href="#">Film's rating</a></li>
+                            <li class="selected"><a href="#">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,41 +63,43 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h1>New films</h1>
-                    <div class="films_block">
-                        <a href="show.html"><img src="imgs/black hawk down.jpg"></a>
-                        <a href="#"><img src="imgs/the matrix.jpg"></a>
-                        <a href="#"><img src="imgs/Снимок.JPG"></a>
-                        <a href="#"><img src="imgs/A main hero.jpg"></a>
+                    <h1>The Matrix</h1>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/vKQi3bBA1y8" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                    <div class="info_film_page">
+                        <span class="label">Rating: </span><span class="value">8.7 / 10</span>
+                        <span class="label">Year: </span><span class="value">1999</span>
+                        <span class="label">Director: </span><span class="value">Vachovskiy brothers</span>
                     </div>
-                    <h1>New Serials</h1>
-                    <div class="films_block">
-                        <a href="#"><img src="imgs/818TrulDKmL._AC_SL1500_.jpg"></a>
-                        <a href="#"><img src="imgs/Без названия.jpg"></a>
-                        <a href="#"><img src=""></a>
-                        <a href="#"><img src=""></a>
-                    </div>
-                    <div class="posts">
-                        <hr>
-                        <h2><a href="#">How was filming "Black Hawk down"</a></h2>
-                        <p>
-                            As for the filming process, the film "Black Hawk Down" was filmed mainly in 
-                            Morocco, as shooting in Somalia was not possible due to political instability in that country.
-                            Real military helicopters and equipment were used to create combat scenes.
-                            Director Ridley Scott sought to create the most realistic perception of the events that
-                            took place in Somalia in 1993.
+                    <hr>
+                    <h2>Film description</h2>
+                    <div class="descriptions_film">
+                        <img src="imgs/The matrix.jpg">
+                        <p> The film opens with Trinity and Cypher having a phone conversation with green numbers running across the screen.
+                            Trinity notices that their conversation is being tapped by someone, after which she deftly fights off the police who came after her and runs away from the Agents.
+                            At the last moment of the chase, she reaches the ringing phone in a phone booth and picks up the phone.
+                            The agent driving the truck crashes into the booth, slamming it into the wall.
+                            However, Trinity's body is no longer there.
+                            Young man Thomas Anderson leads a double life. 
+                            During the day he is a programmer in a large company, and at night he is a hacker Neo.
+                            One day, a strange message arrives on his personal computer: “You are stuck in the Matrix” (The Matrix has you).
+                            An unknown person instructs him to "follow the white rabbit".
                         </p>
                     </div>
-                    <a href="#">Read</a>
-                    <p>
-                        Sir Ridley Scott is a British film director and film producer.
-                        Creator of many acclaimed films such as Alien (1979), Blade Runner (1982), G.I. Jane (1997),
-                        Gladiator (2000), Hannibal (2001), Kingdom of Heaven ( 2005), Gangster (2007), Robin Hood (2010),
-                        Prometheus (2012), Exodus: Gods and Kings (2014), The Martian (2015), House of Gucci (2021).
-                        Older brother of director and producer Tony Scott.
-                        Winner of the Cannes Film Festival Award for Best Debut,
-                        winner and five-time nominee for the BAFTA award, four-time nominee for awards.
-                    </p>
+                    <hr>
+                    <h2>Film reviews</h2>
+                    <div class="review_name">NickName</div>
+                    <div class="review_text">Text</div>
+                </div>
+                <div class="send">
+                    <form method="post" action="#" id="review">
+                        <input type="text" name="review_name" placeholder="your name"/>
+                        <textarea name="review_text"></textarea>
+                        <input type="submit" value="send">
+                    </form>
                 </div>
             </div>
             <div class="footer">

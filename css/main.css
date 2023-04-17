@@ -223,13 +223,14 @@ hr { border: solid 1px #f3f3f3; }
 table
 {
     width: 100%;
-    border: solid 1px #f4f4f4;
+    border: solid 1px #000;
+    background-color: #f4f4f4;
 }
 
 td
 {
     padding: 2%;
-    border: solid 1px #f4f4f4;
+    border: solid 1px #000;
 }
 
 td img
@@ -237,3 +238,7 @@ td img
     width: 60px;
     vertical-align: middle;
 }
+
+.center { text-align: center; }
+
+.rating { font-weight: bold; }

@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <meta name="vieport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Cinema monster - it's portal about movies">
         <meta name="keywords" content="Films, online, hd"/>
         <link rel="stylesheet" href="css/main.css">
@@ -18,11 +17,10 @@
                     </div>
                     <div class="menubar">
                         <ul class="menu">
-                            <li><a href="#">Main</a></li>
-                            <li class="selected"><a href="#">Films</a></li>
-                            <li><a href="#">Serials</a></li>
-                            <li><a href="#">Film's rating</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li class="selected"><a href="#">Main</a></li>
+                            <li class="selected"><a href="#">Serials</a></li>
+                            <li class="selected"><a href="#">Film's rating</a></li>
+                            <li class="selected"><a href="#">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,41 +63,40 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h1>New films</h1>
-                    <div class="films_block">
-                        <a href="show.html"><img src="imgs/black hawk down.jpg"></a>
-                        <a href="#"><img src="imgs/the matrix.jpg"></a>
-                        <a href="#"><img src="imgs/Снимок.JPG"></a>
-                        <a href="#"><img src="imgs/A main hero.jpg"></a>
+                    <h1>Snowden</h1>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/QlSAiI3xMh4"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <div class="info_film_page">
+                        <span class="label">Rating: </span><span class="value">7.3 / 10</span>
+                        <span class="label">Year: </span><span class="value">2016</span>
+                        <span class="label">Director: </span><span class="value">Oliver Stone</span>
                     </div>
-                    <h1>New Serials</h1>
-                    <div class="films_block">
-                        <a href="#"><img src="imgs/818TrulDKmL._AC_SL1500_.jpg"></a>
-                        <a href="#"><img src="imgs/Без названия.jpg"></a>
-                        <a href="#"><img src=""></a>
-                        <a href="#"><img src=""></a>
-                    </div>
-                    <div class="posts">
-                        <hr>
-                        <h2><a href="#">How was filming "Black Hawk down"</a></h2>
+                    <hr>
+                    <h2>Film description</h2>
+                    <div class="descriptions_film">
+                        <img src="imgs/Снимок.JPG">
                         <p>
-                            As for the filming process, the film "Black Hawk Down" was filmed mainly in 
-                            Morocco, as shooting in Somalia was not possible due to political instability in that country.
-                            Real military helicopters and equipment were used to create combat scenes.
-                            Director Ridley Scott sought to create the most realistic perception of the events that
-                            took place in Somalia in 1993.
+                            "Snowden" is a biographical thriller film directed by Oliver Stone, released in 2016. The movie is based on the true story of Edward Snowden, a former National Security Agency (NSA) contractor who leaked classified information to the media about the government's mass surveillance program.
+                            Joseph Gordon-Levitt portrays Edward Snowden in the film. The cast also includes Shailene Woodley, Melissa Leo, Zachary Quinto, Tom Wilkinson, Rhys Ifans, and Nicolas Cage.
+                            The movie follows Snowden's journey from his early days as a computer expert to his work at the NSA, where he becomes disillusioned with the agency's unethical practices. Snowden decides to expose the government's secrets to the public and goes on the run, seeking asylum in Russia.
+                            The film portrays the personal and political consequences of Snowden's actions, as well as the debate over government surveillance and privacy rights. It raises questions about the role of the media, the morality of whistleblowing, and the power of governments to access private information.
+                            Overall, "Snowden" is a thought-provoking and intense film that offers a glimpse into the life and actions of one of the most controversial figures in recent history.
                         </p>
                     </div>
-                    <a href="#">Read</a>
-                    <p>
-                        Sir Ridley Scott is a British film director and film producer.
-                        Creator of many acclaimed films such as Alien (1979), Blade Runner (1982), G.I. Jane (1997),
-                        Gladiator (2000), Hannibal (2001), Kingdom of Heaven ( 2005), Gangster (2007), Robin Hood (2010),
-                        Prometheus (2012), Exodus: Gods and Kings (2014), The Martian (2015), House of Gucci (2021).
-                        Older brother of director and producer Tony Scott.
-                        Winner of the Cannes Film Festival Award for Best Debut,
-                        winner and five-time nominee for the BAFTA award, four-time nominee for awards.
-                    </p>
+                    <hr>
+                    <h2>Film reviews</h2>
+                    <div class="review_name">NickName</div>
+                    <div class="review_text">Text</div>
+                </div>
+                <div class="send">
+                    <form method="post" action="#" id="review">
+                        <input type="text" name="review_name" placeholder="your name"/>
+                        <textarea name="review_text"></textarea>
+                        <input type="submit" value="send">
+                    </form>
                 </div>
             </div>
             <div class="footer">
