@@ -62,17 +62,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="Contacts">
-                    <h1>Contacts</h1>
-                    <h2>Send your info, we'll contact you</h2>
-                    <form method="post" action="#" id="Contact_Form">
-                        <input type="text" name="contact_name" placeholder="Your name">
-                        <input type="text" name="E-Mail" placeholder="E-Mail">
-                        <textarea name="Apply"></textarea>
-                        <input type="submit" class="Cbtn" value="send">
-                    </form>
+                <div class="content">
+                    
                 </div>
-            </div>
             <div class="footer">
                 <link rel="stylesheet" href="css/footer.css">
                 <p>
