@@ -79,3 +79,15 @@
         </div>
     </body>
 </html>
+
+From Bootstrap
+
+ <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">Main</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Serials</a></li>
+                <li><a href="#">Film's rating</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
