@@ -9,3 +9,29 @@
     letter-spacing: 15px;
     font-size: 300%;
 }
+
+.col-li-12 p
+{
+    color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active,a :focus, .nav-pills>li.active,a:hover
+{
+    color: #fff;
+    background-color: #346270;
+}
+
+.nav-pills>li.active,a { color:#fff; }
+
+.nav-pills>li.active,a:hover { background-color: 346270; }
+
+.navbar-inverse { padding: 1%; }
+
+@media (max-width: 1000px)
+{ 
+    .nav-pills>li { float: none; }
+
+    .nav-pills { text-align: center; }
+
+    .header { text-align: center; }
+}
