@@ -19,7 +19,7 @@
     background-color: #346270;
 }
 
-.nav-pills>li.active,a { color:#fff; }
+.nav-pills>li.active,a { color:#337ab7; }
 
 .nav-pills>li.active,a:hover { background-color: 346270; }
 
@@ -60,6 +60,20 @@ html, body { height: 100%; }
 .form-control { border-radius: 0px; }
 
 .input-lg { font-size: 14px; }
+
+.list-group-item-warning
+{
+    color: #8a6d3b;
+    background-color: #f9f9f9;
+}
+
+.badge {background-color: #000000;}
+
+.info-block { font-size: 14px; margin-right: 10px; }
+
+.info-block .badge{ font-size: 80%; }
+
+.info-block span { margin-right: 3%; }
 
 footer
 {
