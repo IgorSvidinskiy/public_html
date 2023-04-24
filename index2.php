@@ -38,8 +38,8 @@
             </div> 
             <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
               <ul class="nav nav-pills">
-                <li><a href="index2.html">Main</a></li>
-                <li class="active"><a href="#">Films</a></li>
+                <li class="active"><a href="index2.html">Main</a></li>
+                <li><a href="showb.html">Films</a></li>
                 <li><a href="#">Serials</a></li>
                 <li><a href="#">Film's rating</a></li>
                 <li><a href="#">Contacts</a></li>
@@ -80,6 +80,30 @@
                 </div>
                 <button type="submit" class="btn btn-warning pull-right">Log In</button>
               </form>
+              <?php
+              // Подключение к базе данных
+              $mysqli = mysqli_connect('localhost', 'username', 'password', 'Users');
+              
+              // Обработка отправки формы
+              if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+              {
+                  // Получение данных из формы
+                  $username = $_POST['username'];
+                  $password = $_POST['password'];
+              
+                  // Поиск пользователя в базе данных
+                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE user_name = '$username'");
+                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE password = ''");
+                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE password = '$e-mail'");
+                  if (mysqli_num_rows($result) > 0) {
+                      $row = mysqli_fetch_assoc($result);
+                      // Проверка правильности пароля
+                      if (password_verify($password, $row['password'])) 
+                      { echo "Авторизация успешна"; }
+                          else { echo "Неправильное имя пользователя или пароль"; } } 
+                          else { echo "Неправильное имя пользователя или пароль"; } }
+                  mysqli_close($mysqli);
+              ?>
             </div>
           </div>
           <div class="panel panel-info">
@@ -116,33 +140,65 @@
           </div>
         </div>
         <div class="row">
-          <h1>Black Hawk down</h1>
-          <hr>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Y1ju8QwpQM"
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="well info-block text-center">
-            Year: <span class="badge">2001</span>
-            Rating: <span class="badge">9.35</span>
-            Director: <span class="badge">Riddley Scott</span>
-        </div>
-        <div class="margin-8"></div>
-        <h2>Description</h2>
-        <hr>
-        <div class="well">
-          <p>
-            The film takes place on October 3 and 4, 1993 in Somalia, where a civil war is going on and people are dying en masse. Accusations of genocide against their own people fall on Somali warlords who prevent the delivery of US humanitarian aid to civilians.
-            The UN peacekeeping contingent is unable to cope with the situation. 
-            Therefore, the command of the American contingent in Somalia is developing a plan for a lightning operation, during which about 200 US troops as part of Task Force "Ranger" (Operational-tactical group "Ranger") (75th Ranger Regiment - a company of the 3rd battalion, 160th air regiment, Delta), based on the outskirts of Mogadishu, should go to the area of the city controlled by the forces of Mohammed Farah Aidid.
-            The purpose of the event is to capture key Aidid supporters who have gathered for a meeting in the city and deliver them to the base.
-            A successfully launched operation turns into a battle lasting almost a day and two downed helicopters.
-            Almost continuous fighting claims the lives of 19 Americans and more than a thousand Somalis.
-          </p>
-        </div>
-        <div class="margin-8"></div>
+          <div class="col-li-9 col-lg-push-3">
+            <h2>New Films</h2>
+            <hr>
+            <div class="row">
+              <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                <img src="imgs/black hawk down.jpg" alt="Black Hawk down">
+                <div class="film_label">Black Hawk down</div>
+              </div>
+              <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                <img src="imgs/the matrix.jpg" alt="The matrix">
+                <div class="film_label">The matrix</div>
+              </div>
+              <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                <img src="imgs/Снимок.JPG" alt="Snowden">
+                <div class="film_label">Snowden</div>
+              </div>
+              <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                <img src="imgs/A main hero.jpg" alt="Free guy">
+                <div class="film_label">Free guy</div>
+              </div>
+              </div>
+              <div class="margin-8"></div>
+              <div class="col-li-9 col-lg-push-3">
+                <h2>New Serials</h2>
+                <hr>
+                <div class="row">
+                  <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                    <img src="imgs/818TrulDKmL._AC_SL1500_.jpg" alt="Sopranos">
+                    <div class="film_label">Sopranos</div>
+                  </div>
+                  <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                    <img src="imgs/Без названия.jpg" alt="Alf">
+                    <div class="film_label">Alf</div>
+                  </div>
+                  <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                    <img src="" alt="">
+                    <div class="film_label"></div>
+                  </div>
+                  <div class="films_block col-lg-3 col-md-3 col-ms-3 col-xs-6">
+                    <img src="" alt="">
+                    <div class="film_label"></div>
+                  </div>
+                  </div>
+                </div>
+              <div class="margin-8"></div>
+              <a href="#">How was filming "Black Hawk down"?</a>
+              <hr>
+              <p>
+                Sir Ridley Scott is a British film director and film producer.
+                Creator of many acclaimed films such as Alien (1979), Blade Runner (1982), G.I. Jane (1997),
+                Gladiator (2000), Hannibal (2001), Kingdom of Heaven ( 2005), Gangster (2007), Robin Hood (2010),
+                Prometheus (2012), Exodus: Gods and Kings (2014), The Martian (2015), House of Gucci (2021).
+                Older brother of director and producer Tony Scott.
+                Winner of the Cannes Film Festival Award for Best Debut,
+                winner and five-time nominee for the BAFTA award, four-time nominee for awards.
+              </p>
+              <a href="#" class="btn btn-warning pull-right">Read</a>
+              <div class="margin-8 clear"></div>
+                </div>
               </div>
             </div>
           </div>
