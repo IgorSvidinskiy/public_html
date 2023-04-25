@@ -69,41 +69,46 @@
             </div>
           </div>
           <div class="panel panel-info">
-            <div class="panel-heading"><div class="sidebar-header">Sign In</div></div>
+            <div class="panel-heading"><div class="sidebar-header"><a href="auth.php">Sign In</a></div></div>
             <div class="panel-body">
-              <form role="form">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="login"></input>
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="password"></input>
-                </div>
-                <button type="submit" class="btn btn-warning pull-right">Log In</button>
-              </form>
-              <?php
-              // Подключение к базе данных
-              $mysqli = mysqli_connect('localhost', 'username', 'password', 'Users');
-              
-              // Обработка отправки формы
-              if ($_SERVER['REQUEST_METHOD'] === 'POST') 
-              {
-                  // Получение данных из формы
-                  $username = $_POST['username'];
-                  $password = $_POST['password'];
-              
-                  // Поиск пользователя в базе данных
-                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE user_name = '$username'");
-                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE password = ''");
-                  $result = mysqli_query($mysqli, "SELECT * FROM cinemamonster_user WHERE password = '$e-mail'");
-                  if (mysqli_num_rows($result) > 0) {
-                      $row = mysqli_fetch_assoc($result);
-                      // Проверка правильности пароля
-                      if (password_verify($password, $row['password'])) 
-                      { echo "Авторизация успешна"; }
-                          else { echo "Неправильное имя пользователя или пароль"; } } 
+            <form role="form" action="PC.php" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="username" placeholder="login">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control input-lg" name="password" placeholder="password">
+              </div>
+              <button type="submit" class="btn btn-warning pull-right">Log In</button>
+              <button type="button" class="btn btn-default" onclick="location.href='register.php';">Register</button>
+                <?php
+                  $sql = "SELECT * FROM `users1`;";
+
+                  // Обработка отправки формы
+                  if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+                  {
+                      // Получение данных из формы
+                      $username = $_POST['username'];
+                      $password = $_POST['password'];
+                  
+                      // Поиск пользователя в базе данных
+                      $result = mysqli_query($mysqli, "SELECT * FROM users1 WHERE username = '$username'");
+                      //password
+                      $result = mysqli_query($mysqli, "SELECT * FROM users1 WHERE password = '$password'");
+
+                      $result = mysqli_query($mysqli, "SELECT * FROM users1 WHERE Email = '$Email'");
+                      if (mysqli_num_rows($result) > 0) 
+                      {
+                          $row = mysqli_fetch_assoc($result);
+                          // Проверка правильности пароля
+                          if (password_verify($password, $row['password'])) 
+                          {
+                              echo "Авторизация успешна";
+                          } 
                           else { echo "Неправильное имя пользователя или пароль"; } }
-                  mysqli_close($mysqli);
+                          else { echo "Неправильное имя пользователя или пароль"; }
+                    }
               ?>
+              </form>
             </div>
           </div>
           <div class="panel panel-info">
