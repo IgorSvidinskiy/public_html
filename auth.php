@@ -23,8 +23,8 @@ if (($_SERVER['REQUEST_METHOD'] === 'POST') &&(isset($_POST['username'])&&(isset
             echo "Авторизация успешна";
             echo "&nbsp;&nbsp;&nbsp;<a href=\"index2.php\">Перейти на главную страницу</a>";
         } 
-        else { echo "Неправильное имя пользователя или пароль"; } }
         else { echo "Неправильное имя пользователя или пароль"; }
+      }
   }
 ?>
 <html>
